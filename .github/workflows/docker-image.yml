@@ -25,7 +25,7 @@ jobs:
       run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/pymessagerabbitmq:${{ steps.timestamp.outputs.timestamp }}
     
     - name: Tag the Docker image as latest
-      run: docker tag ${{ secrets.DOCKER_USERNAME }}/pymessagerabbitmq:${{ steps.timestamp.outputs.timestamp }} ${DOCKER_USERNAME}/pymessagerabbitmq:latest
+      run: docker tag ${{ secrets.DOCKER_USERNAME }}/pymessagerabbitmq:${{ steps.timestamp.outputs.timestamp }} ${{ secrets.DOCKER_USERNAME }}/pymessagerabbitmq:latest
 
     - name: Push to Docker Hub
       run: docker push ${{ secrets.DOCKER_USERNAME }}/pymessagerabbitmq:${{ steps.timestamp.outputs.timestamp }}
