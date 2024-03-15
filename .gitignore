@@ -1,0 +1,15 @@
+# 排除虚拟环境目录，通常是venv或者.env
+venv/
+.env/
+
+# 排除所有的__pycache__目录
+**/__pycache__/
+
+# 排除python编译产生的.pyc文件
+*.pyc
+
+# 排除pycharm的配置目录
+.idea/
+
+# 排除pycharm的工作区配置文件
+*.iml

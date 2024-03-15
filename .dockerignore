@@ -1,0 +1,15 @@
+# .dockerignore
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.log
+.dockerignore
+.dockerfile
+*.sql
+*.sqlite
+venv
+.idea
+Dockerfile
+deploy.sh
+webhook_logs.log
