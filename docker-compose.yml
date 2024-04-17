@@ -1,8 +1,6 @@
-version: '3.1'
+version: '3'
 services:
-  rabbitmqclient:
-    build:
-      context: ..
-      dockerfile: Dockerfile
-    volumes:
-      - .:/app
+  pymessagerabbitmq:
+    container_name: pymessagerabbitmq
+    image: gwozai/pymessagerabbitmq
+    restart: unless-stopped
