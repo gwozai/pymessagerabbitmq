@@ -34,7 +34,7 @@ class RabbitMQClient:
         # 判断是否为上一条ip 是的话跳过
         # 判断是否为上一张图片，是的话跳过
         data = json.loads(body)
-        # print("Received message: ", data)
+        print("Received message: ", data)
         # print(data['EventName'])
         HOST_URL = "http://1.15.7.2:9000/"
         event_time = data['Records'][0].get('eventTime', '')
